@@ -112,3 +112,7 @@ Cloud Monitoring integrated with Slack alerts for:
 • BigQuery table partitioning and clustering.
 
 • Auto-scaling parameters for Cloud Run and Vertex AI for optimal cost-performance balance.
+- **Cloud Run**:
+  - `min-instances: 0`, `max-instances: 10`, `concurrency: 80` to optimize cost vs performance.
+- **Vertex AI**:
+  - `minReplicaCount: 0`, `maxReplicaCount: 5` with autoscaling based on request volume.
